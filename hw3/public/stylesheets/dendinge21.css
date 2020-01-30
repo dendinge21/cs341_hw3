@@ -1,0 +1,115 @@
+/* Olivia Dendinger */
+
+/* set background color to skyblue */
+html{
+    background-color: skyblue;
+}
+
+/* add second background */
+body {
+    margin: 100px; /*  create second background with margins */
+    background-color: powderblue; /* set to a different color blue */ 
+    font-family: "Apple Chancery";
+}
+
+/* Changing the look of the title */
+#title {
+    font-family: verdana; /* new font */
+    font-size: 160%; /* enlarge the text */
+    text-align: center; /* center it to the page */
+}
+
+td {
+    vertical-align: top; /* align the drop down menu and the flavor choices */
+}
+
+/* centering the table which includes the quanity and topping */
+#choice {
+    display: table;
+    margin: 0 auto;
+}
+
+/* changing the label for the text area */
+#notes {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    font-family: courier; /* new font */
+    font-size: 100%; /* enlarge text */
+    /*padding-left: 52px; /* align with the text area */
+}
+
+/* centering the text area */
+#box {
+    display: block; 
+    margin: 0 auto;
+}
+
+/* centering the order button */
+#submit {
+    display: block;
+    margin: 0 auto;
+}
+
+/* centering the cheesecake image */
+#cheesecake {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50% /* decrease the size */
+}
+
+/* centering and changing font of the past orders */
+/*
+#past {
+    font-family: courier;
+    text-align: center;
+}
+*/
+
+.dropdown {
+    display: inline;
+    text-decoration: underline;
+    background-color: white;
+  }
+  
+  /*External Citation: https://www.w3schools.com/css/css_dropdowns.asp */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+     height: 150px;
+     overflow: auto;
+  }
+/* centering the bulleted list */ 
+ul{
+    width: 22%;
+    margin: 0 auto;
+ 
+}
+
+

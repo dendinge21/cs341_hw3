@@ -1,0 +1,97 @@
+<!--Olivia Dendinger -->
+
+<!DOCTYPE html>
+<html>
+    <!-- linking the css file -->
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
+        <script src="/Users/oliviadendinger/Documents/GitHub/cs341_hw3/hw3/public/javascripts/dendinge21.js"> </script>
+        <link rel="stylesheet" href="/Users/oliviadendinger/Documents/GitHub/cs341_hw3/hw3/public/stylesheets/dendinge21.css">
+    </head>
+
+    <body>
+        <!-- adding the title -->
+        <h1 id="title"> Cheesecake Order Form </h1>
+
+        <!-- inserting a picture of a cheescake with a url and changing the size -->
+        <img id="cheesecake" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1599px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width=250 height=250>
+
+        <!-- inserting a form for user input -->
+        <div id="orderform">
+            <!-- creating the table for quantity and topping choices-->
+            <table id="choice"> 
+                <tr>
+                    <th> Quantity </th> <!-- labels -->
+                    <th> Topping </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                        <!-- adding quanitity options to drop down -->
+                        <select id="amount">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <!-- adding radio buttons for various toppings -->
+                        <input type="radio" name="type" value="Plain"> Plain<br>
+                        <input type="radio" name="type" value="Cherry"> Cherry<br>
+                        <input type="radio" name="type" value="Chocolate"> Chocolate<br>
+                    </div>
+                    </td>
+                </tr>
+            </table>
+
+            <form action="">
+                <!-- adding label for text area titled Notes: -->
+                <label id="notes" for="box"> Notes:  </label> 
+                <br>
+
+                <!-- adding text area for user special instructions -->
+                <textarea id="box" rows="5" cols="60" name="box">
+                    Enter any special instructions here.
+                </textarea>
+                <br>
+
+                <!-- adding a order button -->
+                <input id="submit" type="submit" value="Order">
+            </form>
+        </div>
+
+        <!-- heading for past orders -->
+        <b>Orders for</b>
+            <div class="dropdown"> 
+                <b id="month">Jan</b>
+                <div class="dropdown-content" id="dropdown-content">
+                <a href="#">Jan</a>
+                <a href="#">Feb</a>
+                <a href="#">March</a>
+                <a href="#">Apr</a>
+                <a href="#">May</a>
+                <a href="#">Jun</a>
+                <a href="#">Jul</a>
+                <a href="#">Aug</a>
+                <a href="#">Sep</a>
+                <a href="#">Oct</a>
+                <a href="#">Nov</a>
+                <a href="#">Dec</a>
+                </div>
+            </div>
+       <!-- <h3 id="past">Order for Jan </h3> --> 
+
+        <!-- bulleted list for past order information -->
+        <ul>
+            <li>11 Cherry</li>
+            <li>17 Chocolate</li>
+            <li>31 Plain</li>
+        </ul>
+
+    </body>
+</html>
